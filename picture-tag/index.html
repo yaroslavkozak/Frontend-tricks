@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Picture Tag</title>
+</head>
+<body>
+
+    
+    
+
+
+    <picture>
+        <source srcset="wide@1x.webp 1x, wide@2x.webp 2x" media="(min-width:600px)" type="image/webp">
+        <source srcset="wide@1x.png 1x, wide@2x.png 2x" media="(min-width:600px)">
+        <source srcset="square@1x.webp 1x, square@2x.webp 2x" type="image/webp">
+        <img  src="square@1x.png" srcset="square@2x.png 2x" alt="square-image">
+    </picture>
+
+    
+</body>
+</html>

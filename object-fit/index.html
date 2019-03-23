@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Object-Fit</title>
+
+    <style>
+        .image 
+        { 
+            float:left; 
+            margin-right:25px; 
+            width:30%; 
+            height:256px; 
+        }
+
+        .image--cover
+        { 
+            object-fit: cover;
+        }
+
+        .image--fake 
+        { 
+            background-size: cover;
+            background-position:center;  
+        }
+
+
+        .image--poly
+        { 
+            font-family:'object-fit:cover'; 
+        }
+    </style>
+</head>
+<body>
+
+    <img class="image image--cover" src="mri.jpg?img" alt="MRI">
+    
+    <svg preserveAspectRatio="xMidYMid slice" role="image" aria-label="MRI" viewBox="0 0 1024 640" class="image">
+        <image xlink:href="mri.jpg?svg" height="100%" width="100%"/>
+    </svg>   
+
+
+    <div role="image" aria-label="MRI" style="background-image:url(mri.jpg?fake)" class="image image--fake"></div>
+    
+    <div role="image" aria-label="MRI" style="background-image:url(mri.jpg?poly)" class="image image--fake image--poly"></div>
+
+    <script src="script.js"></script>
+    <script>
+            objectFitImages();
+    </script>
+</body>
+</html>

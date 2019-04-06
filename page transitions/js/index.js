@@ -1,5 +1,17 @@
 // import test from "./test"
 
-const run = () => {
-    console.log('Yo, I am running');
-}; 
+// const run = () => {
+//     console.log('Yo, I am running');
+// }; 
+
+
+import Highway from '@dogstudio/highway'; 
+import Fade from './transition'; 
+
+const H = new Highway.Core({
+    transitions:
+    { 
+        default:Fade
+    }
+
+});

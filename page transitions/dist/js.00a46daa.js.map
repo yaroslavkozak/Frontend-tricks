@@ -1,0 +1,1 @@
+{"version":3,"sources":["js/index.js"],"names":["run","console","log"],"mappings":"AAAA;AAEA,IAAMA,GAAG,GAAG,SAANA,GAAM,GAAM;AACdC,EAAAA,OAAO,CAACC,GAAR,CAAY,kBAAZ;AACH,CAFD","file":"js.00a46daa.js","sourceRoot":"..","sourcesContent":["// import test from \"./test\"\r\n\r\nconst run = () => {\r\n    console.log('Yo, I am running');\r\n}; "]}
